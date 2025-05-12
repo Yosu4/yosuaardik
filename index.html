@@ -3,74 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Yosua Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Yosua Ardi Kurniawan</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact Information</a></li>
-                <li><a href="#testimonials">Testimonials</a></li> </ul>
+    <header class="header">
+        <a href="#home" class="logo">Yosua Ardi Kurniawan</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skils</a>
+            <a href="#projects">Projects</a>
         </nav>
     </header>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Write a brief introduction about yourself here. You can include your background, interests, and what you're passionate about.</p>
-            <button id="theme-toggle">Toggle Theme</button> </section>
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="images/yosua_ancol.jpg" alt="Profile Image">
+        </div>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project Title 1</h3>
-                <p>A short description of your first project. Mention the technologies used and your role.</p>
-                <a href="#" target="_blank">View Project</a>
+        <div class="home-content">
+            <h3>Hello! my name is</h3>
+            <h1>Yosua Ardi Kurniawan</h1>
+            <h3>And I'm a <span class="multiple-text">Java Developer</span></h3>
+            <p>Driven Java developer with 5+ years of experience developing and delivering robust web applications. 
+                Skilled at integrating innovative technologies and thriving in Agile environments. 
+                Leverages excellent analytical and debugging skills to continuously improve code quality and application performance. 
+                Seeking to utilize expert Java and web development skills to build scalable solutions that deliver business value.</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/yosua-ardi-kurniawan/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://web.facebook.com/yosua.sidokare"><i class='bx bxl-facebook'></i></a>
+                <a href="https://github.com/Yosu4"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/k.yosua/"><i class='bx bxl-instagram'></i></a>
             </div>
-
-            <div class="project">
-                <h3>Project Title 2</h3>
-                <p>A brief description of your second project. Highlight key features and outcomes.</p>
-                <a href="#" target="_blank">View Code</a>
-            </div>
-
-            </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Spring Boot</li>
-                <li>Quarkus</li>
-                <li>SQL</li>
-                </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Information</h2>
-            <p>Feel free to reach out to me!</p>
-            <ul>
-                <li>Email: yosua4k@gmail.com</li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/yosua-ardi-kurniawan/" target="_blank">Your LinkedIn Profile</a></li>
-                <li>GitHub: <a href="https://yosu4.github.io/yosuaardik/" target="_blank">Your GitHub Profile</a></li>
-                </ul>
-        </section>
-
-        <section id="testimonials"> <h2>Testimonials</h2>
-            <div id="testimonial-container">
-                <p id="testimonial-text">No testimonials yet.</p>
-                <p id="testimonial-author"></p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
-    </footer>
+            <a href="pdf/Yosua_CV.pdf" class="btn" download="Yosua_Ardi_Kurniawan_CV.pdf">Download CV</a>
+        </div>
+    </section>
 
     <script src="js/script.js"></script>
 </body>
